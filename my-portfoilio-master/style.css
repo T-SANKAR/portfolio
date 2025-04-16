@@ -361,18 +361,18 @@ p {
   left: 950px;
   transform: translateY(-50%);
   text-align: center;
-  color: #f8f0f0;
+  color: #000000;
   font-size: 1.2rem;
   line-height: 1.6;
   z-index: 9999;
-  background: rgb(19, 2, 2);
+  background: rgba(255, 255, 255, 0.8);
   padding: 16px 20px;
   border-radius: 20px;
-  border: 6px solid crimson; /* increased border thickness */
+  border: 6px solid #ed0a0a; /* increased border thickness */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   animation: fadeInRight 4s ease forwards;
   /* Hide all content sections by default */
-  S .content-section {
+  .content-section {
     display: none;
   }
 
@@ -441,50 +441,50 @@ p {
 /* End Projects section */
 
 /* contact Section */
-#contact .contact {
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-#contact .contact-items {
-  width: 400px;
-}
-#contact .contact-item {
-  width: 80%;
+/* Contact Form Section */
+.contact-form {
+  max-width: 400px;
+  margin: 40px auto;
   padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
   text-align: center;
-  border-radius: 10px;
-  padding: 30px;
-  margin: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0px 0px 18px 0 #0000002c;
-  transition: 0.3s ease box-shadow;
 }
-#contact .contact-item:hover {
-  box-shadow: 0px 0px 5px 0 #0000002c;
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
-#contact .icon {
-  width: 70px;
-  margin: 0 auto;
-  margin-bottom: 10px;
+
+.contact-form button {
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: crimson;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+  transition: 0.3s ease;
 }
-#contact .contact-info h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin-bottom: 5px;
+
+.contact-form button:hover {
+  background-color: #ff4d4d;
 }
-#contact .contact-info h2 {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-#contact .contact-details {
-  text-decoration: none;
-  color: black;
-}
+
 /*End contact Section */
 
 /* Footer */
@@ -694,4 +694,38 @@ p {
     flex-basis: 22%;
     margin: 1.5%;
   }
+}
+#Skills {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.skills.container {
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.skill {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill h2 {
+  color: #fd0707;
+  margin-bottom: 10px;
 }

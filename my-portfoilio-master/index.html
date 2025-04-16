@@ -27,13 +27,14 @@
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero"><h1>POR<span>TF</span>OLI<span>O</span></h1></a>
+          <a href="#hero"><h1>P<span>O</span>RTF<span>O</span>LI<span>O</span></h1></a>
         </div>
         <div class="nav-list">
           <div class="hamburger"><div class="bar"></div></div>
           <ul>
             <li><a href="#hero" data-after="Home">Home</a></li>
             <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#Skills" data-after="Skills">Skills</a></li>
             <li><a href="#projects" data-after="Project">Projects</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
           </ul>
@@ -92,7 +93,29 @@
   <!-- End About Section -->
 
   
-
+<!--skills-->
+<!-- Skills Section -->
+<section id="Skills">
+  <div class="skills container">
+    <h1 class="section-title">My <span>skills</span></h1>
+    <div class="skills-list">
+      <div class="skill">
+        <h2>Frontend</h2>
+        <p>HTML, CSS, JavaScript, React.js</p>
+      </div>
+      <div class="skill">
+        <h2>Backend</h2>
+        <p>Java, Java Servlets,Springboot</p>
+      </div>
+      <div class="skill">
+        <h2>Database</h2>
+        <p>MySQL, MongoDB (Basics)</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!--end skills-->
   
 
   <!-- Projects Section -->
@@ -128,38 +151,47 @@ validation. </p><br>
  
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="contact container">
-      <div><h1 class="section-title">Contact <span>info</span></h1></div>
-      <div class="contact-items">
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
-          <div class="contact-info">
-            <h1>Phone</h1>
-            <h2><a href="tel:+91 9360649511" class="contact-details">+91 9360649511
-          </div>
+<section id="contact">
+  <div class="contact container">
+    <div><h1 class="section-title">Contact <span>info</span></h1></div>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png"/></div>
+        <div class="contact-info">
+          <h1>Phone</h1>
+          <h2><a href="tel:+91 9360649511" class="contact-details">+91 9360649511</a></h2>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
-          <div class="contact-info">
-            <h1>Email</h1>  
-       
-            <h2><a href="mailto:sankarthangarasu511@gmail.com" class="contact-details">sankarthangarasu511@gmail.com</a></h2>
-        
-          </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png"/></div>
+        <div class="contact-info">
+          <h1>Email</h1>
+          <h2><a href="mailto:sankarthangarasu511@gmail.com" class="contact-details">sankarthangarasu511@gmail.com</a></h2>
         </div>
-        <div class="contact-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
-          <div class="contact-info">
-            <h1>Address</h1>
-            <h2>124/D Gandhi Nagar Sembampalayam,Nasiyanur, Erode-638 107</h2>
-            
-          </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png"/></div>
+        <div class="contact-info">
+          <h1>Address</h1>
+          <h2>124/D Gandhi Nagar Sembampalayam, Nasiyanur, Erode-638 107</h2>
         </div>
       </div>
     </div>
-  </section>
-  <!-- End Contact Section -->
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="https://formspree.io/f/xkgjagrz" method="POST">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="cta">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- End Contact Section -->
+
 
   <!-- Footer -->
   <section id="footer">
@@ -177,5 +209,5 @@ validation. </p><br>
       </div>
       
   <script src="./app.js"></script>
-</body 
-</html
+    </body >
+</html>
